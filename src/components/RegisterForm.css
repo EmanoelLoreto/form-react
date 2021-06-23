@@ -1,0 +1,22 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.MuiFormLabel-root, .MuiInputBase-input {
+  color: white !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.div-switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-bottom: 5px;
+}
