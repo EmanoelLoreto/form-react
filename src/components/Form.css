@@ -12,6 +12,18 @@
   border-color: white !important;
 }
 
+.MuiButton-root {
+  margin-top: 5px !important;
+}
+
+.MuiPaper-root {
+  background-color: #282c34 !important;
+}
+
+.MuiStepLabel-label {
+  color: white !important;
+}
+
 .div-switch {
   display: flex;
   flex-direction: row;

@@ -1,18 +1,12 @@
-import RegisterForm from './components/RegisterForm';
+import Form from './components/Form.jsx';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Registrar-se</h1>
-      <RegisterForm sendForm={sendForm} />
+      <Form />
     </div>
   );
-}
-
-function sendForm(data) {
-  console.log(data);
-
 }
 
 export default App;
