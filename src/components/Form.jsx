@@ -28,15 +28,21 @@ export default function Form() {
     <RegisterForm changeForm={changeForm} sendForm={sendForm} />,
     <DataUserForm changeForm={changeForm} sendForm={sendForm} />,
     <DeliveryForm changeForm={changeForm} sendForm={sendForm} />,
-    <span>
-      {
-      Object.keys(dataForm).map((key, index) => (
-        <p key={index}>
-          <span>{key}: {dataForm[key] ? dataForm[key] : 'null'}</span>
-        </p>
-      ))
-    }
-    </span>
+    <>
+      <h1>Formulário enviado.</h1>
+      <span>
+        {
+        Object.keys(dataForm).map((key, index) => (
+          <p key={index}>
+            <span>{key}: {dataForm[key] === true 
+              ? 'true' : dataForm[key]
+              ? dataForm[key] : 'false'}
+            </span>
+          </p>
+        ))
+      }
+      </span>
+    </>
   ]
 
   return (
